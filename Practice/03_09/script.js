@@ -16,6 +16,12 @@ const backpack = {
     left: 26,
     right: 26,
   },
+  changeVolume(newVolume){
+    this.volume = newVolume;
+  }, 
+  changeColor(color) {
+    this.color = color;
+  },
   toggleLid: function (lidStatus) {
     this.lidOpen = lidStatus;
   },
@@ -24,3 +30,12 @@ const backpack = {
     this.strapLength.right = lengthRight;
   },
 };
+
+console.log("Color before: ", backpack.color)
+
+backpack.changeColor('red')
+
+console.log("Color after: ", backpack.color)
+
+
+
