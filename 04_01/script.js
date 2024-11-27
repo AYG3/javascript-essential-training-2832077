@@ -19,13 +19,13 @@ const content = `<main>
       <article>
         <h1> ${everydayPack.name}</h1>
         <ul>
-          <li>Volume: ${everydayPack.name}</li>
-          <li>Color: ${everydayPack.name}</li>
-          <li>Age: ${everydayPack.name}</li>
-          <li>Number of pockets: ${everydayPack.name}</li>
-          <li>Left strap length: ${everydayPack.name}</li>
-          <li>Right strap length: ${everydayPack.name}</li>
-          <li>Lid status: ${everydayPack.name}</li>
+          <li>Volume: ${everydayPack.volume}</li>
+          <li>Color: ${everydayPack.color}</li>
+          <li>Age: ${everydayPack.age}</li>
+          <li>Number of pockets: ${everydayPack.pocketNum}</li>
+          <li>Left strap length: ${everydayPack.strapLength.strapLengthL}</li>
+          <li>Right strap length: ${everydayPack.strapLength.strapLengthR}</li>
+          <li>Lid status: ${everydayPack.lidOpen}</li>
         </ul>
       </article>
     </main>`;
