@@ -17,20 +17,21 @@ const everydayPack = new Backpack(
 );
 const content = `<main>
       <article>
-        <h1>Everyday Backpack</h1>
+        <h1> ${everydayPack.name}</h1>
         <ul>
-          <li>Volume:</li>
-          <li>Color:</li>
-          <li>Age:</li>
-          <li>Number of pockets:</li>
-          <li>Left strap length:</li>
-          <li>Right strap length:</li>
-          <li>Lid status:</li>
+          <li>Volume: ${everydayPack.name}</li>
+          <li>Color: ${everydayPack.name}</li>
+          <li>Age: ${everydayPack.name}</li>
+          <li>Number of pockets: ${everydayPack.name}</li>
+          <li>Left strap length: ${everydayPack.name}</li>
+          <li>Right strap length: ${everydayPack.name}</li>
+          <li>Lid status: ${everydayPack.name}</li>
         </ul>
       </article>
     </main>`;
 
-document.bof=d
+document.body.innerHTML = content
+
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
 console.log("Days since aquired:", everydayPack.backpackAge());
