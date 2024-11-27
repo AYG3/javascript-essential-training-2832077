@@ -7,24 +7,16 @@
  * - Test the objecs by calling their properties and using their methods in the console.
  */
 
-class Laptop {
-    constructor(
-        name,
-        color,
-        gamingPC,
-        GPUprod,
-        GPUseries,
-    ) {
-        this.name = name,
-        this.color = color,
-        this.gamingPC = gamingPC,
-        this.GPU = {
-            prod : GPUprod,
-            series : GPUseries
-        };
-    }
-    toggleGamingPC(state) {
-        this.gamingPC = state
-    }
-}
-export default Laptop;
+import Laptop from "./Laptop.js";
+
+const myPC = new Laptop(
+    'Asus Zephyrus g15',
+    'white',
+    true,
+    'NVIDIA',
+    'RTX'
+)
+
+console.log('MyPC object: ', myPC)
+myPC.toggleGamingPC(false)
+console.log('MyPC object after: ', myPC)
