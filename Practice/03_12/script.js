@@ -34,12 +34,7 @@ console.log("My table: ", dTable);
 dTable.toggleErgonomic(true)
 console.log("My table after: ", dTable);
 
-const dPC = new PC(
-    'Macbook',
-    'silver',
-    false,
-    null,
-    'M4 chip'
-)
+const dPC = new PC()
+
 
 console.log("dPC: ", dPC);
