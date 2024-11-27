@@ -8,6 +8,7 @@
  */
 
 import Laptop from "./Laptop.js";
+import Table from "./table.js";
 
 const myPC = new Laptop(
     'Asus Zephyrus g15',
@@ -20,3 +21,14 @@ const myPC = new Laptop(
 console.log('MyPC object: ', myPC)
 myPC.toggleGamingPC(false)
 console.log('MyPC object after: ', myPC)
+
+const dTable = new Table(
+    "brown",
+    "Wood",
+    "Rough",
+    false
+)
+
+console.log("My table: ", dTable);
+dTable.toggleErgonomic(true)
+console.log("My table after: ", dTable);
