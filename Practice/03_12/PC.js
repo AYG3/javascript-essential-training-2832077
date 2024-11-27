@@ -14,3 +14,5 @@ class PC extends Laptop {
     this.GPUseries = 'None'
     }
 }
+
+export default PC;

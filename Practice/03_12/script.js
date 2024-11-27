@@ -8,6 +8,7 @@
  */
 
 import Laptop from "./Laptop.js";
+import PC from "./PC.js";
 import Table from "./table.js";
 
 const myPC = new Laptop(
@@ -32,3 +33,13 @@ const dTable = new Table(
 console.log("My table: ", dTable);
 dTable.toggleErgonomic(true)
 console.log("My table after: ", dTable);
+
+const dPC = new PC(
+    'Macbook',
+    'silver',
+    false,
+    null,
+    'M4 chip'
+)
+
+console.log("dPC: ", dPC);
