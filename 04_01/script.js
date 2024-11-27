@@ -21,7 +21,7 @@ const content = `<main>
         <ul>
           <li>Volume: ${everydayPack.volume}</li>
           <li>Color: ${everydayPack.color}</li>
-          <li>Age: ${everydayPack.age}</li>
+          <li>Age: ${everydayPack.backpackAge()}</li>
           <li>Number of pockets: ${everydayPack.pocketNum}</li>
           <li>Left strap length: ${everydayPack.strapLength.strapLengthL}</li>
           <li>Right strap length: ${everydayPack.strapLength.strapLengthR}</li>
