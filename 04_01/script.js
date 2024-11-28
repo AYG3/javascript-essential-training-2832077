@@ -31,6 +31,7 @@ const content = `<main>
     </main>`;
 
 document.body.innerHTML = content
+document.body.querySelectorAll('')
 
 console.log("The everydayPack object:", everydayPack);
 console.log("The pocketNum value:", everydayPack.pocketNum);
