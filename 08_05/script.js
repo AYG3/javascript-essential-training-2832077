@@ -23,3 +23,14 @@ const greenPack = {
 };
 
 console.log(greenPack.newVolume(5));
+
+const laptop = {
+  name: 'Zephyrus',
+  gaming: true,
+  isGamingPC: (gaming) => {
+    laptop.gaming = gaming
+  }
+}
+
+console.log("laptop: ", laptop.name)
+console.log("laptop: ", laptop.gaming)
