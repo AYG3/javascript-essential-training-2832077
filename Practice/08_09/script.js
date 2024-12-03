@@ -57,3 +57,21 @@ const content = `
       }</span></li>
     </ul>  
 `;
+
+const func = (content) =>{
+  let article = document.createElement('article')
+
+  article.innerHTML = content
+  
+  return article
+}
+
+const func2 = (obj) => {
+  let figElement = document.createElement('figure')
+
+  figElement = obj.image;
+
+  figElement.setAttribute('figcaption')
+
+  return figElement;
+}
