@@ -58,32 +58,43 @@ const content = `
     </ul>  
 `;
 
-const func = (content) =>{
-  let article = document.createElement('article')
+const main = (content, par2, par3) =>{
+  let article = document.createElement('article') //create article element
 
-  article.innerHTML = content
+  article.append(content)
+  article.append(par2)
+  article.append(par3)
+  
   
   return article
 }
 
-let func_value = func(content)
+let checkMain = main(content)
 
-const func2 = (obj) => {
+console.log("Check main: ", checkMain);
+
+const secFunc = (obj) => {
   let figElement = document.createElement('figure')
+  
+  figElement.append(obj.image);
 
-  figElement = obj.image;
+  figElement.setAttribute('figcaption', 'Nice image, no kidding!!!')
 
-  figElement.setAttribute('figcaption')
+  console.log("FigElement: ", figElement)
 
   return figElement;
 }
 
-let func2_value = func2(func_value)
+let hold3 = secFunc(frogpack)
 
-const addToDom = (leverage) => {
-    let dom = document.querySelector('backpack__name')
 
-    dom.append(leverage)
-}
+// let dom = document.querySelector('backpack__name')
 
-addToDom(func2_value)
+
+let hold = main(frogpack)
+console.log("Main after passing frogpack: ", hold)
+
+let hold2 = secFunc(hold)
+console.log("secFunc after passing frogpack: ", hold2);
+
+main(content, hold2, hold3);
