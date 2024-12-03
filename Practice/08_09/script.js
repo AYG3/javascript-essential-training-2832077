@@ -66,6 +66,8 @@ const func = (content) =>{
   return article
 }
 
+let func_value = func(content)
+
 const func2 = (obj) => {
   let figElement = document.createElement('figure')
 
@@ -75,3 +77,13 @@ const func2 = (obj) => {
 
   return figElement;
 }
+
+let func2_value = func2(func_value)
+
+const addToDom = (leverage) => {
+    let dom = document.querySelector('backpack__name')
+
+    dom.append(leverage)
+}
+
+addToDom(func2_value)
